@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CourseRepositoryImpl implements CourseRepository {
-    EntityManager entityManager = HibernateConfiguration.getEntityManager();
+     private final   EntityManager entityManager = HibernateConfiguration.getEntityManager();
 
     @Override
     public String saveCourse(Course course) {
@@ -21,7 +21,7 @@ public class CourseRepositoryImpl implements CourseRepository {
             entityManager.close();
             System.out.println("Save course");
         } catch (HibernateException e) {
-            System.out.println((e.getMessage()));
+            System.out.println((e.getMessage()+"lfdkjglskj"));
         }
         return "save course";
 

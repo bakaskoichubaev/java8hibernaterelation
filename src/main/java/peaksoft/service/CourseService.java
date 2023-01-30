@@ -8,7 +8,7 @@ import peaksoft.repository.impl.CourseRepositoryImpl;
 import java.util.List;
 
 public class CourseService implements CourseRepository {
-    private CourseRepository courseRepository = new CourseRepositoryImpl();
+    private final CourseRepository courseRepository = new CourseRepositoryImpl();
 
     @Override
     public String saveCourse(Course course) {

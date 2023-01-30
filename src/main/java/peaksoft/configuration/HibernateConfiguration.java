@@ -15,8 +15,8 @@ public class HibernateConfiguration {
         configuration.setProperty(DRIVER, "org.postgresql.Driver");
         configuration.setProperty(URL, "jdbc:postgresql://localhost:5432/postgres");
         configuration.setProperty(USER, "postgres");
-        configuration.setProperty(PASS, "");
-        configuration.setProperty(HBM2DDL_AUTO, "create");
+        configuration.setProperty(PASS, "1234");
+        configuration.setProperty(HBM2DDL_AUTO, "update");
         configuration.setProperty(DIALECT, "org.hibernate.dialect.PostgreSQL9Dialect");
         configuration.setProperty(SHOW_SQL, "true");
         configuration.addAnnotatedClass(Course.class);

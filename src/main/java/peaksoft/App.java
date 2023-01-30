@@ -23,9 +23,11 @@ import java.util.Scanner;
  * Hello world!
  *
  */
-public class App 
+public class App
 {
     public static void main( String[] args ) {
+        commands();
+        methods();
 
 
     }
@@ -55,6 +57,7 @@ public class App
         System.out.println("Press 19 to get all tasks by lesson ID");
         System.out.println("Press 20 to delete task by ID");
         System.out.println("---------------------------------------------");
+
     }
     static void methods() {
         Scanner scanner = new Scanner(System.in);
@@ -78,6 +81,7 @@ public class App
                             Scanner scanner11 = new Scanner(System.in);
                             Course course = new Course();
                             System.out.print("Write course name:");
+                            course.setName(scanner1.nextLine());
                             System.out.print("Write description: ");
                             course.setDescription(scanner.nextLine());
                             System.out.print("Write image link");
@@ -86,12 +90,9 @@ public class App
                             course.setDuration(scanner.next());
                             System.out.print("Write year when course create at:");
                             int year = scanner1.nextInt();
-                            while(year<1990){
-                                year = scanner.nextInt();
-                            }
                             int month = random.nextInt(12);
                             int day = random.nextInt(30);
-                            course.setCreateAt(String.valueOf(LocalDate.of(year, day, month)));
+                            course.setCreateAt(LocalDate.of(year, day, month));
                             courseRepository.saveCourse(course);
                         }
                         case "2" -> {
@@ -141,21 +142,19 @@ public class App
                             }
                             int month = random.nextInt(12);
                             int day = random.nextInt(30);
-                            course.setCreateAt(String.valueOf(LocalDate.of(year, month, day)));
+                            course.setCreateAt((LocalDate.of(year, month, day)));
                             courseRepository.updateCourse(id, course);
                         }
                         case "7" -> {
-                            Scanner scanner7 = new Scanner(System.in);
-                            Scanner scanner3 = new Scanner(System.in);
                             Instructor instructor = new Instructor();
                             System.out.print("Write instructor name:");
-                            instructor.setFirstName(scanner7.nextLine());
+                            instructor.setFirstName(new Scanner(System.in).nextLine());
                             System.out.print("Write instructor last name:");
-                            instructor.setLastName(scanner1.nextLine());
+                            instructor.setLastName(new Scanner(System.in).nextLine());
                             System.out.print("Write instructor email:");
-                            instructor.setEmail(scanner.nextLine());
+                            instructor.setEmail(new Scanner(System.in).nextLine());
                             System.out.print("Write instructor phone number:");
-                            instructor.setPhoneNumber(scanner7.nextLine());
+                            instructor.setPhoneNumber(new Scanner(System.in).nextLine());
                             instructorRepository.saveInstructor(instructor);
                         }
                         case "8" -> {

@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class Course {
     private String imageLink;
     private String description;
 
-    private String createAt;
+    private LocalDate createAt;
 
     @OneToMany(cascade = {ALL},fetch = FetchType.LAZY,mappedBy = "course")
     private List<Lesson>lessons = new ArrayList<>();
@@ -34,7 +35,7 @@ public class Course {
     @ManyToMany(cascade = {PERSIST,MERGE,DETACH,REFRESH},fetch = FetchType.EAGER)
     private List<Instructor> instructors = new ArrayList<>();
 
-    public Course(String name, String duration, String imageLink, String description, String createAt) {
+    public Course(String name, String duration, String imageLink, String description, LocalDate createAt) {
         this.name = name;
         this.duration = duration;
         this.imageLink = imageLink;
