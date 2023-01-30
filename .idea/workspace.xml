@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3c4845f-d45e-44c4-88d9-1d9184e46d90" name="Changes" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/configuration/HibernateConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/models/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/models/Instructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/models/Lesson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/models/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repository/CourseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repository/InstructorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repository/LessonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repository/TaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repository/impl/CourseRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repository/impl/InstructorRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repository/impl/LessonRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repository/impl/TaskRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/service/CourseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/service/InstructorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/service/LessonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/peaksoft/service/TaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/peaksoft/AppTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="b3c4845f-d45e-44c4-88d9-1d9184e46d90" name="Changes" comment="second commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,8 +74,16 @@
       <workItem from="1674913275834" duration="3528000" />
       <workItem from="1675009420378" duration="9516000" />
       <workItem from="1675018962361" duration="7000" />
-      <workItem from="1675046978493" duration="5566000" />
+      <workItem from="1675046978493" duration="5956000" />
     </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1675052785651</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675052785651</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
